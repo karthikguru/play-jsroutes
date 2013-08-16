@@ -1,14 +1,8 @@
 function sayHello(){
-	var name = "karthik";
-	alert("before request");
+	var name=$('#username').val();
 	myJsRoutes.controllers.Application.hello(name).ajax({
 		success: function(data){
-			alert("sucess");			
+			$('#sayHello').text(data);			
 		}
-		
-		error : function(){
-			alert("error");
-		}
-	});
-	}
+	});	
 }

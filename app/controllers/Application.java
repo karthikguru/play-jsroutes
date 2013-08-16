@@ -13,8 +13,8 @@ public class Application extends Controller {
     }
     
     public static Result hello(String name){
-    	Logger.info("Inside Java Hello with name as: "+name );
-    	return ok("Hi "+name+", Have a great day..o...!!!!!");
+    	Logger.info("Inside Java Hello with name as: "+name);
+    	return ok("Hi " +name+ " have a great day.....!!!!!");
     }
     
     public static Result myJsRoutes(){
